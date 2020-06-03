@@ -1,0 +1,122 @@
+@keyframes myAnimation{
+  0%{
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  70%{
+    opacity: 0.3;
+    transform: rotateX(0deg);
+  }
+  100%{
+    display: none;
+    opacity: 1;
+    transform: rotateX(90deg);
+  }
+}
+
+.cijena{
+  animation-name: myAnimation;
+  animation-duration: 4000ms;
+  animation-fill-mode: forwards;
+  color:whitesmoke !important;
+}
+
+.card-text{
+  color: rgb(169,169,169);
+}
+
+label{
+  margin-right: auto;
+  color: lightslategray;
+  font-weight: bolder;
+  font-size: x-small;
+  display: block;
+  float: left;
+  color: rgba(210, 192, 61, 0.76);
+}
+
+.card-title{
+  color: darkgoldenrod;
+}
+
+.card{
+  border: 3px solid rgba(210, 192, 61, 0.76);
+  background-color: #f8f9fa;
+}
+
+.btn-outline-success {
+  color: rgba(210, 192, 61, 0.76);
+  border-color: rgba(210, 192, 61, 0.76);
+}
+
+.btn-outline-success:hover {
+  background-color: rgba(210, 192, 61, 0.76);
+  color: white;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(210, 192, 61, 0.76);
+  border-color: rgba(210, 192, 61, 0.76);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.tooltip-cont {
+  display: inline-block;
+}
+
+.ikona{
+  position: relative;
+}
+
+.tooltip-cont .tooltiptext {
+  visibility: hidden;
+  background-color: goldenrod;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: small;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip-cont:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip-cont .tooltipcoin {
+  visibility: hidden;
+  background-color: goldenrod;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: small;
+  text-align: center;
+  border-radius: 6px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.tooltip-cont:hover .tooltipcoin {
+  visibility: visible;
+}
+
+.tooltip-cont .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 13%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent goldenrod transparent;
+}
